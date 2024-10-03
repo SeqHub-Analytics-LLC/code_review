@@ -6,8 +6,8 @@ from feedback_guidance import exercises
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def home():
+    return "Hello, Pierrepont Student!"
 
 
 @app.route('/feedback', methods=['POST'])
