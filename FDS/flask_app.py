@@ -20,9 +20,10 @@ def feedback_response():
     text = request.form.get('text')
 
     guidance = "Students should write functional code"
-    exercise = prompt_map[assessment_name]
-    if exercise[id] == id:
-        guidance = exercise["guidance"]
+    exercises = prompt_map[assessment_name]
+    for exercise in exercises:
+        if exercise["id"] == id:
+            guidance = exercise["guidance"]
 
     prompt = guidance + "\n\nGiven the guidelines above, review the student's attempt below:\n\n" + text
     messages = [{"role": "system", 
