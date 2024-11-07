@@ -1,21 +1,56 @@
 exercises = [
       {
         "id": "homework1_Q1",
-        "guidance": """Their work should be exactly the same as this solution. The most important thing is the value of characters_q1 must be set to the correct answer option which is 3. It’s important to note that the student will not have access to the example function, so no reference should be made to the solution below i.e the correct value being 3:
+        "guidance":  """
+                   **Question:** Around how many periods are there in the chapter with the most characters?
+                         
+                   **Student's Task:** 
+                   Assign either 1, 2, 3, 4, or 5 to the name characters_q1 below.
 
-                    def hw1_exercise_1():
-                      characters_q1 = 3
-                      return characters_q1
+                        1. 250
+                        2. 390
+                        3. 440
+                        4. 32,000
+                        5. 40,000
+                   
+                   **Review Criteria:**
+                  From the graph, the correct answer is 440 i.e option 3.
+                   - The students are expected to place their choosen option as `characters_q1` in the `hw1_exercise_1` function. The value of characters_q1 must be set to the correct answer option. 
+                   - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e ellipsis still exists in the function block instead of an answer attempt.
+                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again by taking a closer look at the scatterplot preceeding the question.
+                   
+                  **Expected Completed Function:** The completed function of the students should look like this with the correct answer choice set to `characters_q1`.
+                        ```
+                        def hw1_exercise_1():
+                            characters_q1 = 3
+                            return characters_q1
+                        ```
                     """
       },
       {
         "id": "homework1_Q2",
-        "guidance": """Their work should be exactly the same as this solution. The most important thing is the value of characters_q2 must be set to the correct answer option which is 1. It’s important to note that the student will not have access to the example function, so no reference should be made to the solution below i.e the correct value being 1:
+        "guidance":   """
+                   **Question:** Which of the following chapters has the most characters per period?
+                         
+                   **Student's Task:** 
+                   Assign either 1, 2, or 3 to the name `characters_q2` below.
 
-                    def hw1_exercise_2():
-                          characters_q2 = 1
-                        
-                          return characters_q2
+                        1. The chapter with about 60 periods
+                        2. The chapter with about 350 periods
+                        3. The chapter with about 440 periods
+                   
+                   **Review Criteria:**
+                  From the graph, the correct answer is 60 periods i.e option 1.
+                   - The students are expected to place their choosen option as `characters_q2` in the `hw1_exercise_2` function. The value of characters_q2 must be set to the correct answer option. 
+                   - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e ellipsis still exists in the function block instead of an answer attempt.
+                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again by taking a closer look at the scatterplot preceeding the question.
+                   
+                  **Expected Completed Function:** The completed function of the students should look like this with the correct answer choice set to `characters_q2`.
+                        ```
+                          def hw1_exercise_2():
+                                characters_q2 = 1
+                                return characters_q2
+                        ```
                     """
       },
       {
@@ -328,5 +363,94 @@ exercises = [
                                 return biggest_rel_change_major
                               ```  
                     """
-      }
+      },
+      {
+        "id": "homework1_Q12",
+        "guidance": """
+                         **Question:**  The data were gathered by the following procedure, reported in the study. "Between January and June 1998, parents of children aged 2-16 years [...] that were seen as outpatients in a university pediatric ophthalmology clinic completed a questionnaire on the child’s light exposure both at present and before the age of 2 years." Was this study observational, or was it a controlled experiment? Explain.
+                         **Student's Task:** 
+                         Express your opinion and response as a string in `response` in the `hw1_exercise_12` function.
+      
+                         **Review Criteria:**
+      
+                         - The students are expected to express their opinion as `response` in the `hw1_exercise_12` function. Their response must be logical and reasonable given the context of the question. 
+                         - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e "Your response here" still exists in the function block instead of an answer attempt.
+                         - **Note:** Critique the students opinion or answer by pointing out the flaws if their answer is off point or acknowledging the points raised if correct. Give subtle hints if the response is not completely correct.
+                         
+                        **Expected Completed Function:** The completed function of the students should look like this with their opinion or response set to `response`.
+                              ```
+                              def hw1_exercise_12():
+                                response = "Student's will express their opinion here"
+                                return response
+                              ```
+                  """
+      },
+      {
+        "id": "homework1_Q13",
+        "guidance": """
+                         **Question:**  The study found that of the children who slept with a room light on before the age of 2, 55% were myopic. Of the children who slept with a night light on before the age of 2, 34% were myopic. Of the children who slept in the dark before the age of 2, 10% were myopic. The study concluded that, "The prevalence of myopia [...] during childhood was strongly associated with ambient light exposure during sleep at night in the first two years after birth."
+                         Do the data support this statement? You may interpret "strongly" in any reasonable qualitative way.
+                         
+                         **Student's Task:** 
+                         Express your opinion and response as a string in `response` in the `hw1_exercise_13` function.
+      
+                         **Review Criteria:**
+      
+                         - The students are expected to express their opinion as `response` in the `hw1_exercise_13` function. Their response must be logical and reasonable given the context of the question. 
+                         - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e "Your response here" still exists in the function block instead of an answer attempt.
+                         - **Note:** Critique the students opinion or answer by pointing out the flaws if their answer is off point or acknowledging the points raised if correct. Give subtle hints if the response is not completely correct.
+                         
+                        **Expected Completed Function:** The completed function of the students should look like this with their opinion or response set to `response`.
+                              ```
+                              def hw1_exercise_13():
+                                response = "Student's will express their opinion here"
+                                return response
+                              ```
+                  """
+      },
+      {
+        "id": "homework1_Q14",
+        "guidance": """
+                         **Question:**  On May 13, 1999, CNN reported the results of this study under the headline, "Night light may lead to nearsightedness." Does the conclusion of the study claim that night light causes nearsightedness?
+                         
+                         **Student's Task:** 
+                         Express your opinion and response as a string in `response` in the `hw1_exercise_14` function.
+      
+                         **Review Criteria:**
+      
+                         - The students are expected to express their opinion as `response` in the `hw1_exercise_14` function. Their response must be logical and reasonable given the context of the question. 
+                         - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e "Your response here" still exists in the function block instead of an answer attempt.
+                         - **Note:** Critique the students opinion or answer by pointing out the flaws if their answer is off point or acknowledging the points raised if correct. Give subtle hints if the response is not completely correct.
+                         
+                        **Expected Completed Function:** The completed function of the students should look like this with their opinion or response set to `response`.
+                              ```
+                              def hw1_exercise_14():
+                                response = "Student's will express their opinion here"
+                                return response
+                              ```
+                  """
+      },
+      {
+        "id": "homework1_Q15",
+        "guidance": """
+                         **Question:**  The final paragraph of the CNN report said that "several eye specialists" had pointed out that the study should have accounted for heredity.
+                         Myopia is passed down from parents to children. Myopic parents are more likely to have myopic children, and may also be more likely to leave lights on habitually (since the parents have poor vision). In what way does the knowledge of this possible genetic link affect how we interpret the data from the study
+                         
+                         **Student's Task:** 
+                         Express your opinion and response as a string in `response` in the `hw1_exercise_15` function.
+      
+                         **Review Criteria:**
+      
+                         - The students are expected to express their opinion as `response` in the `hw1_exercise_15` function. Their response must be logical and reasonable given the context of the question. 
+                         - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e "Your response here" still exists in the function block instead of an answer attempt.
+                         - **Note:** Critique the students opinion or answer by pointing out the flaws if their answer is off point or acknowledging the points raised if correct. Give subtle hints if the response is not completely correct.
+                         
+                        **Expected Completed Function:** The completed function of the students should look like this with their opinion or response set to `response`.
+                              ```
+                              def hw1_exercise_15():
+                                response = "Student's will express their opinion here"
+                                return response
+                              ```
+                  """
+      },
     ]
