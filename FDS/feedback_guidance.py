@@ -209,9 +209,9 @@ exercises = [
       {
         "id": "homework1_Q8",
         "guidance":  """
-                         **Question:** **Question 1.** Suppose you want to find the **biggest** absolute difference between the numbers of degree recipients in the two years, among the three majors.
+                         **Question:** Suppose you want to find the **biggest** absolute difference between the numbers of degree recipients in the two years, among the three majors.
                                             
-                         **Context:** Berkeley’s Office of Planning and Analysis provides data on numerous aspects of the campus. Adapted from the OPA website, the table below displays the numbers of degree recipients in three majors in the academic years 2008-2009 and 2017-2018.
+                        **Context:** Berkeley’s Office of Planning and Analysis provides data on numerous aspects of the campus. Adapted from the OPA website, the table below displays the numbers of degree recipients in three majors in the academic years 2008-2009 and 2017-2018.
                         | Major                              | 2008-2009    | 2017-2018   |
                         |------------------------------------|--------------|-------------|
                         | Gender and Women's Studies         |      17      |    28       |
@@ -239,7 +239,7 @@ exercises = [
         "guidance": """
                          **Question:** Which of the three majors had the **smallest** absolute difference?
                          
-                          **Context:** Berkeley’s Office of Planning and Analysis provides data on numerous aspects of the campus. Adapted from the OPA website, the table below displays the numbers of degree recipients in three majors in the academic years 2008-2009 and 2017-2018.
+                        **Context:** Berkeley’s Office of Planning and Analysis provides data on numerous aspects of the campus. Adapted from the OPA website, the table below displays the numbers of degree recipients in three majors in the academic years 2008-2009 and 2017-2018.
                         | Major                              | 2008-2009    | 2017-2018   |
                         |------------------------------------|--------------|-------------|
                         | Gender and Women's Studies         |      17      |    28       |
@@ -272,7 +272,7 @@ exercises = [
         "guidance": """
                          **Question:** For each major, define the "relative change" to be the following: $\large{\frac{\text{absolute difference}}{\text{value in 2008-2009}} * 100}$
                          
-                          **Context:** Berkeley’s Office of Planning and Analysis provides data on numerous aspects of the campus. Adapted from the OPA website, the table below displays the numbers of degree recipients in three majors in the academic years 2008-2009 and 2017-2018.
+                        **Context:** Berkeley’s Office of Planning and Analysis provides data on numerous aspects of the campus. Adapted from the OPA website, the table below displays the numbers of degree recipients in three majors in the academic years 2008-2009 and 2017-2018.
                         | Major                              | 2008-2009    | 2017-2018   |
                         |------------------------------------|--------------|-------------|
                         | Gender and Women's Studies         |      17      |    28       |
@@ -302,7 +302,7 @@ exercises = [
         "guidance": """
                          **Question:** Which of the three majors had the **smallest** absolute difference?
                          
-                          **Context:** Berkeley’s Office of Planning and Analysis provides data on numerous aspects of the campus. Adapted from the OPA website, the table below displays the numbers of degree recipients in three majors in the academic years 2008-2009 and 2017-2018.
+                        **Context:** Berkeley’s Office of Planning and Analysis provides data on numerous aspects of the campus. Adapted from the OPA website, the table below displays the numbers of degree recipients in three majors in the academic years 2008-2009 and 2017-2018.
                         | Major                              | 2008-2009    | 2017-2018   |
                         |------------------------------------|--------------|-------------|
                         | Gender and Women's Studies         |      17      |    28       |
