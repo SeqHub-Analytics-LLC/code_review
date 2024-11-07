@@ -30,13 +30,37 @@ exercises = [
       },
       {
         "id": "homework1_Q4",
-        "guidance": """Their work should be exactly the same as this solution. The most important thing is the value of names_q2 must be set to the correct answer option which is 4. It’s important to note that the student will not have access to the example function, so no reference should be made to the solution below i.e the correct value being 4:
+        "guidance": """
+                   **Question:** When you run the following code block wrapped in triple backticks, Python will produce a cryptic error message.
+                         ```
+                         two = 3
+                         six = two plus two
+                         ```
+                   **Student's Task:** 
+                   Choose the best explanation of what's wrong with the code and assign 1, 2, 3, or 4 to `names_q2` below to indicate your answer.
 
-                    def hw1_exercise_4():
+                   1. The `plus` operation only applies to numbers, not the word "two".
+                  
+                   2. The name "two" cannot be assigned to the number 3.
+                  
+                   3. Two + two is four, not six.
+                  
+                   4. Python cannot interpret the name `two` followed directly by a name that has not been defined.
+
+                   **Review Criteria:**
+
+                   - The students are expected to place their choosen option as `names_q2` in the `hw1_exercise_4` function. The value of names_q2 must be set to the correct answer option given the context of the question. 
+                   
+                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again by providing subtle hints without revealing the answer.
+
+                  **Expected Completed Function:** The completed function of the students should look like this with the correct answer choice set to `names_q2`.
+                  
+                        ```
+                        def hw1_exercise_4():
                           names_q2 = 4
-                        
                           return names_q2
-                    """
+                        ```
+                  """
       },
       {
         "id": "homework1_Q5",
