@@ -27,10 +27,9 @@ lab01_prompts = [
                    **Experiment Details:** To verify the accuracy of this law, we will calculate the difference between the predicted distance the hammer drops and the actual distance.  (If they are different, it might be because Newton's laws are wrong, or because our measurements are imprecise, or because there are other factors affecting the hammer for which we haven't accounted.)
                    Someone studied the video and estimated that the hammer was dropped 113 cm from the surface. Counting frames in the video, the hammer falls for 1.2 seconds (36 frames).
                          
-                   **Student's Task:** From the experiment details, what is the duration of the fall in the experiment, in seconds and estimated distance the hammer actually fell, in meters?
+                   **Question:** From the experiment details, what is the duration of the fall in the experiment, in seconds and estimated distance the hammer actually fell, in meters?
                    
-                   **Student's Task:** 
-                   Specify the distance as `estimated_distance_m` and duration as `time` in the required units. *Hint:* No computation required; just fill in data from the experiment details.
+                   **Student's Task:** You'll have to replace each variable in the math formula with the name we gave that number in function.                   
                    
                    **Review Criteria:**
                    - The students are expected to fill `estimated_distance_m` and `time` in the `lab1_exercise_2` function. Both values must be correct and converted to the appropriate units as specified by the question
@@ -50,36 +49,49 @@ lab01_prompts = [
                     """
       },
       {
-        "id": "homework1_Q3",
-        "guidance": """
-                   **Question:** When you run the following code block wrapped in triple backticks, Python will produce a cryptic error message.
-                         ```
-                         4 = 2 + 2
-                         ```
-                   **Student's Task:** 
-                   Choose the best explanation of what's wrong with the code, and then assign 1, 2, 3, or 4 to `names_q1` below to indicate your answer.
-
-                   1. Python is smart and already knows `4 = 2 + 2`.
-                  
-                   2. `4` is already a defined number, and it doesn't make sense to make a number be a name for something else. In Python, "`x = 2 + 2`" means "assign `x` as the name for the value of `2 + 2`."
-                  
-                   3. It should be `2 + 2 = 4`.
-                  
-                   4. I don't get an error message. This is a trick question.
+        "id": "lab1_Q3",
+        "guidance":    """
+                   **Experiment Details:** To verify the accuracy of this law, we will calculate the difference between the predicted distance the hammer drops and the actual distance.  (If they are different, it might be because Newton's laws are wrong, or because our measurements are imprecise, or because there are other factors affecting the hammer for which we haven't accounted.)
+                   Someone studied the video and estimated that the hammer was dropped 113 cm from the surface. Counting frames in the video, the hammer falls for 1.2 seconds (36 frames).
+                         
+                   **Student's Task:** Complete the code in the function to compute the difference between the predicted and estimated distances (in meters) that the hammer fell in this experiment. This just means translating the formula above ($\frac{1}{2}G\frac{M}{R^2}t^2$) into Python code as the predicted distance.
                    
+                   **Student's Task:** This just means translating the formula above ($\frac{1}{2}G\frac{M}{R^2}t^2$) into Python code.  You'll have to replace each variable in the math formula with the name we gave that number in Python code.             
+                  
                    **Review Criteria:**
-
-                   - The students are expected to place their choosen option as `names_q1` in the `hw1_exercise_3` function. The value of names_q1 must be set to the correct answer option given the context of the question. 
+                   - The students are expected to fill `estimated_distance_m` and `time` in the `lab1_exercise_2` function. Both values must be correct and converted to the appropriate units as specified by the question
                    - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e ellipsis still exists in the function block instead of an answer attempt.
-                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again by providing subtle hints without revealing the answer.
+                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again and give subtle hints without revealing the answer.
                    
-                  **Expected Completed Function:** The completed function of the students should look like this with the correct answer choice set to `names_q1`.
+                  **Expected Completed Function:** The completed function of the students should look like this with the value of `estimated_distance_m` and `time` set.
                         ```
-                        def hw1_exercise_3():
-                          names_q1 = 2
-                          return names_q1
+                        def lab1_exercise_3():.
+
+                                # G, the universal constant measuring the strength of gravity.
+                                gravity_constant = 6.674 * 10**-11
+                              
+                                # M, the moon's mass, in kilograms.
+                                moon_mass_kg = 7.34767309 * 10**22
+                              
+                                # R, the radius of the moon, in meters.
+                                moon_radius_m = 1.737 * 10**6
+                              
+                                # The distance the hammer should have fallen
+                                # over the duration of the fall, in meters,
+                                # according to Newton's law of gravity.
+                                # The text above describes the formula
+                                # for this distance given by Newton's law.
+                                # **YOU FILL THIS PART IN.**
+                                predicted_distance_m = 0.5 * gravity_constant * (moon_mass_kg / moon_radius_m**2) * time**2
+                              
+                                # Here we've computed the difference
+                                # between the predicted fall distance and the distance we actually measured.
+                                # If you've filled in the above code, this should just work.
+                                difference = predicted_distance_m - estimated_distance_m
+                              
+                                return difference
                         ```
-                  """
+                    """
       },
       {
         "id": "homework1_Q4",
