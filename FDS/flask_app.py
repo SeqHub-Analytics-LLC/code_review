@@ -21,9 +21,9 @@ def feedback_response():
         if exercise["id"] == id:
             guidance = exercise["guidance"]
 
-    prompt = guidance + "\n\nDiscuss how well this text acheives the goals above:\n\n" + text
+    prompt = guidance + "\n\nGiven the guidelines above, review the student's attempt below:\n\n" + text
     messages = [{"role": "system", 
-                 "content": "You are a concise feedback assistant speaking to a student. Students begin with placeholder functions and must write a functional version. If the text appears to be a placeholder, tell the student that they haven't yet attempted a solution. They are working in Google Colab and some variables will already have been defined. The guidance should tell you what variable have already been defined, if any. Your job is to give them support without telling them the answer. You can describe edits, but do not write code for them nor reveal answers to them."}]
+                 "content": "Evaluate the student’s attempt by considering the question, expected task, and review criteria. If the code appears to contain a placeholder (ellipsis), let the student know they haven’t yet started a functional solution. Keep in mind that you’re providing constructive support directly to the student—offer suggestions on edits and hints but avoid writing code or giving away the answer. Some variables may already be defined in Google Colab, as noted in the guidelines, so check those to ensure the student’s code is using them as expected."}]
     feedback = chatcompletion(prompt, messages)
     # Return the response
     return jsonify({'response': feedback})
