@@ -18,7 +18,8 @@ def feedback_response():
     text = request.form.get('text')
 
     guidance = "Students should write functional code"
-    if Mapping[assessment_name]["id"] == id:
+    exercise = Mapping[assessment_name]
+    if exercise["id"] == id:
         guidance = exercise["guidance"]
 
     prompt = guidance + "\n\nGiven the guidelines above, review the student's attempt below:\n\n" + text
