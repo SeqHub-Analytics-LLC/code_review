@@ -31,6 +31,7 @@ exercises = [
       {
         "id": "homework1_Q4",
         "guidance": """
+                   **Your Task:** Evaluate the student’s attempt at solving the problem based on the provided question, expected task, and review criteria. Remember, your response will be shared directly with the student, so communicate in a way that offers constructive feedback.
                    **Question:** When you run the following code block wrapped in triple backticks, Python will produce a cryptic error message.
                          ```
                          two = 3
@@ -50,11 +51,10 @@ exercises = [
                    **Review Criteria:**
 
                    - The students are expected to place their choosen option as `names_q2` in the `hw1_exercise_4` function. The value of names_q2 must be set to the correct answer option given the context of the question. 
-                   
+                   - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e ellipsis still exists in the function block instead of an answer attempt.
                    - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again by providing subtle hints without revealing the answer.
-
+                   
                   **Expected Completed Function:** The completed function of the students should look like this with the correct answer choice set to `names_q2`.
-                  
                         ```
                         def hw1_exercise_4():
                           names_q2 = 4
