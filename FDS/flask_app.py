@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from openai_interaction import ai_chat, chatcompletion
 import os
-from feedback_guidance import exercises
+from feedback_guidance import *
 
 app = Flask(__name__)
 
@@ -13,13 +13,13 @@ def home():
 @app.route('/feedback', methods=['POST'])
 def feedback_response():
     # Get parameters from the request
+    assessment_name = request.form.get('assessment_name')
     id = request.form.get('id')
     text = request.form.get('text')
 
     guidance = "Students should write functional code"
-    for exercise in exercises:
-        if exercise["id"] == id:
-            guidance = exercise["guidance"]
+    if Mapping[assessment_name]["id"] == id:
+        guidance = exercise["guidance"]
 
     prompt = guidance + "\n\nGiven the guidelines above, review the student's attempt below:\n\n" + text
     messages = [{"role": "system", 
