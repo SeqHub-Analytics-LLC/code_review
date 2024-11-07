@@ -449,4 +449,3 @@ lab01_prompts = [
       },
     ]
 
-Mapping = {'lab01': lab01_prompts}
