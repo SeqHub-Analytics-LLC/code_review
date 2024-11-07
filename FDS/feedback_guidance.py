@@ -31,7 +31,6 @@ exercises = [
       {
         "id": "homework1_Q4",
         "guidance": """
-                   **Your Task:** Evaluate the student’s attempt at solving the problem based on the provided question, expected task, and review criteria. Remember, your response will be shared directly with the student, so communicate in a way that offers constructive feedback.
                    **Question:** When you run the following code block wrapped in triple backticks, Python will produce a cryptic error message.
                          ```
                          two = 3
