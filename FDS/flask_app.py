@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, jsonify
 from openai_interaction import ai_chat, chatcompletion
 import os
-from feedback_guidance import *
+from lab_prompts import *
+from homework_prompts import *
+from mapping import prompt_map
 
 app = Flask(__name__)
 
@@ -18,7 +20,7 @@ def feedback_response():
     text = request.form.get('text')
 
     guidance = "Students should write functional code"
-    exercise = Mapping[assessment_name]
+    exercise = prompt_map[assessment_name]
     if exercise["id"] == id:
         guidance = exercise["guidance"]
 
