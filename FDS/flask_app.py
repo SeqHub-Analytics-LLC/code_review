@@ -21,7 +21,7 @@ def feedback_response():
 
     guidance = "Students should write functional code"
     exercise = prompt_map[assessment_name]
-    if exercise["id"] == id:
+    if exercise[id] == id:
         guidance = exercise["guidance"]
 
     prompt = guidance + "\n\nGiven the guidelines above, review the student's attempt below:\n\n" + text
