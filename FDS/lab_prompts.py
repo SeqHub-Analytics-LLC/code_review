@@ -1,30 +1,23 @@
 
-hw01_prompts = [
+lab01_prompts = [
       {
-        "id": "homework1_Q1",
+        "id": "lab1_Q1",
         "guidance":  """
-                   **Question:** Around how many periods are there in the chapter with the most characters?
+                   **Question:** How many seconds are there between midnight January 1, 2010 and midnight January 1, 2020. Note that there are two leap years in this span of a decade. A non-leap year has 365 days and a leap year has 366 days.
                          
                    **Student's Task:** 
-                   Assign either 1, 2, 3, 4, or 5 to the name characters_q1 below.
-
-                        1. 250
-                        2. 390
-                        3. 440
-                        4. 32,000
-                        5. 40,000
+                   Assign the name `seconds_in_a_decade` to the number of seconds between midnight January 1, 2010 and midnight January 1, 2020.
                    
                    **Review Criteria:**
-                  From the graph, the correct answer is 440 i.e option 3.
-                   - The students are expected to place their choosen option as `characters_q1` in the `hw1_exercise_1` function. The value of characters_q1 must be set to the correct answer option. 
+                   - The students are expected to place their chosen option as `seconds_in_a_decade` in the `lab1_exercise_1` function. The value of seconds_in_a_decade when computed must yield the correct value. It could also be directly set to the actual value. 
                    - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e ellipsis still exists in the function block instead of an answer attempt.
-                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again by taking a closer look at the scatterplot preceeding the question.
+                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again and give subtle hints without revealing the answer.
                    
-                  **Expected Completed Function:** The completed function of the students should look like this with the correct answer choice set to `characters_q1`.
+                  **Expected Completed Function:** The completed function of the students should look like this with the value of `seconds_in_a_decade` set the actual value of seconds or a computation which yields the correct number of seconds.
                         ```
-                        def hw1_exercise_1():
-                            characters_q1 = 3
-                            return characters_q1
+                        def lab1_exercise_1():
+                            seconds_in_a_decade = (365 * 8 + 366 * 2) * 24 * 60 * 60
+                            return seconds_in_a_decade
                         ```
                     """
       },
@@ -456,4 +449,4 @@ hw01_prompts = [
       },
     ]
 
-Mapping = {'hw01': hw01_prompts}
+Mapping = {'lab01': lab01_prompts}
