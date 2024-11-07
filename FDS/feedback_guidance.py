@@ -1,4 +1,3 @@
-Mapping = {'hw01': hw01_prompts}
 
 hw01_prompts = [
       {
@@ -456,3 +455,5 @@ hw01_prompts = [
                   """
       },
     ]
+
+Mapping = {'hw01': hw01_prompts}
