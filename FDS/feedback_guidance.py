@@ -199,9 +199,7 @@ exercises = [
                         **Expected Completed Function:** The completed function of the students should look like this with their opinion or response set to `response`.
                               ```
                               def hw1_exercise_7b():
-                                response = """
-                                Student's will express their opinion here..
-                                """
+                                response = "Student's will express their opinion here"
                                 return response
                               ```
                   """
