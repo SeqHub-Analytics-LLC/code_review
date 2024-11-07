@@ -9,7 +9,7 @@ lab01_prompts = [
                    Assign the name `seconds_in_a_decade` to the number of seconds between midnight January 1, 2010 and midnight January 1, 2020.
                    
                    **Review Criteria:**
-                   - The students are expected to place their chosen option as `seconds_in_a_decade` in the `lab1_exercise_1` function. The value of seconds_in_a_decade when computed must yield the correct value. It could also be directly set to the actual value. 
+                   - The students are expected to fill `seconds_in_a_decade` in the `lab1_exercise_1` function. The value of seconds_in_a_decade when computed must yield the correct value. It could also be directly set to the actual value. 
                    - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e ellipsis still exists in the function block instead of an answer attempt.
                    - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again and give subtle hints without revealing the answer.
                    
@@ -22,28 +22,30 @@ lab01_prompts = [
                     """
       },
       {
-        "id": "homework1_Q2",
-        "guidance":   """
-                   **Question:** Which of the following chapters has the most characters per period?
+        "id": "lab1_Q2",
+        "guidance":    """
+                   **Experiment Details:** To verify the accuracy of this law, we will calculate the difference between the predicted distance the hammer drops and the actual distance.  (If they are different, it might be because Newton's laws are wrong, or because our measurements are imprecise, or because there are other factors affecting the hammer for which we haven't accounted.)
+                   Someone studied the video and estimated that the hammer was dropped 113 cm from the surface. Counting frames in the video, the hammer falls for 1.2 seconds (36 frames).
                          
+                   **Student's Task:** From the experiment details, what is the duration of the fall in the experiment, in seconds and estimated distance the hammer actually fell, in meters?
+                   
                    **Student's Task:** 
-                   Assign either 1, 2, or 3 to the name `characters_q2` below.
-
-                        1. The chapter with about 60 periods
-                        2. The chapter with about 350 periods
-                        3. The chapter with about 440 periods
+                   Specify the distance as `estimated_distance_m` and duration as `time` in the required units. *Hint:* No computation required; just fill in data from the experiment details.
                    
                    **Review Criteria:**
-                  From the graph, the correct answer is 60 periods i.e option 1.
-                   - The students are expected to place their choosen option as `characters_q2` in the `hw1_exercise_2` function. The value of characters_q2 must be set to the correct answer option. 
+                   - The students are expected to fill `estimated_distance_m` and `time` in the `lab1_exercise_2` function. Both values must be correct and converted to the appropriate units as specified by the question
                    - **Note:** You can only claim that a student is yet to attempt the problem if the placeholders i.e ellipsis still exists in the function block instead of an answer attempt.
-                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again by taking a closer look at the scatterplot preceeding the question.
+                   - **Note:** The correct answer must not be referenced if a students gets the answer wrong. Instead prompt them to try again and give subtle hints without revealing the answer.
                    
-                  **Expected Completed Function:** The completed function of the students should look like this with the correct answer choice set to `characters_q2`.
+                  **Expected Completed Function:** The completed function of the students should look like this with the value of `estimated_distance_m` and `time` set.
                         ```
-                          def hw1_exercise_2():
-                                characters_q2 = 1
-                                return characters_q2
+                        def lab1_exercise_2():.
+                          # t, the duration of the fall in the experiment, in seconds.
+                          time = 1.2
+                        
+                          # The estimated distance the hammer actually fell, in meters.
+                          estimated_distance_m = 1.13
+                          return time,estimated_distance_m
                         ```
                     """
       },
